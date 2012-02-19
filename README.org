@@ -1,0 +1,39 @@
+#+TITLE:     Animation Speed Control for GNOME Shell 3.2
+#+AUTHOR:    Maciek Borzecki
+#+EMAIL:     maciek.borzecki@gmail.com
+#+DATE:      2012-02-19 Sun
+#+LANGUAGE:  en
+#+OPTIONS:   H:3 num:t toc:t \n:nil @:t ::t |:t ^:t -:t f:t *:t <:t
+#+OPTIONS:   TeX:t LaTeX:nil skip:nil d:nil todo:t pri:nil tags:not-in-toc
+#+INFOJS_OPT: view:nil toc:nil ltoc:t mouse:underline buttons:0 path:http://orgmode.org/org-info.js
+#+EXPORT_SELECT_TAGS: export
+#+EXPORT_EXCLUDE_TAGS: noexport
+#+LINK_UP:   
+#+LINK_HOME: 
+
+* INSTALLATION
+1. Copy directory animation-speed-control@bboozzoo.gmail.com into
+   ~/.local/share/gnome-shell/extensions
+2. Copy org.gnome.shell.extensions.animation-speed-control.gschema.xml to
+   /usr/share/glib-2.0/schemas
+3. Run glib-compile-schemas /usr/share/glib-2.0/schemas
+4. Enable extension using gnome-tweak-tool
+
+* USAGE
+By default the animation speed is unchanged, the slow down in Shell toolkit (St)
+is set to 1.0 (default speed). To increase the animation speed (i.e. apply
+inverse slowdown), set the speed value to less than default 1.0. For example, to
+have the animations run at double speed, run:
+
+gsettings set org.gnome.shell.extensions.animation-speed-control speed 0.5
+
+For animations to be twice longer:
+
+gsettings set org.gnome.shell.extensions.animation-speed-control speed 2
+
+For almost 'instant' animations:
+
+gsettings set org.gnome.shell.extensions.animation-speed-control speed 0.001
+
+* BUGS
+Report bugs at the project page: http://github.com/bboozzoo/gnome-shell-extension-animation-speed-control
