@@ -1,0 +1,6 @@
+{
+    "shell-version": ["3.2.2.1"], 
+    "uuid": "animation-speed-control@bboozzoo.gmail.com", 
+    "name": "Animation Speed Control", 
+    "description": "Control the speed of all shell animations"
+}

@@ -1,0 +1,9 @@
+<schemalist>
+  <schema path="/org/gnome/shell/extensions/animation-speed-control/" id="org.gnome.shell.extensions.animation-speed-control" gettext-domain="animation-speed-control">
+    <key name="speed" type='d'>
+      <default>1.0</default>
+      <summary>Default animation speed</summary>
+      <description>Default animation speed, 1.0 run at default speed, &lt; 1.0 - faster than default</description>
+    </key>
+  </schema>
+</schemalist>
